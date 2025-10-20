@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="wpfcustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wpfListCustomers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wpfListMovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wpfmovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wpfrental.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wplListRental.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
