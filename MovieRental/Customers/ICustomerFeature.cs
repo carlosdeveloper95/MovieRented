@@ -4,6 +4,7 @@
 	{
 		Customer Save(Customer customer);
 
+		bool ValidateCustomer(int intCustomerId);
 
 	}
 }

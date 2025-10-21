@@ -31,6 +31,11 @@ namespace WpfMovieRental
 		{
 			try
 			{
+				if (decimal.TryParse(txtAmmount.Text,out decimal decAmmount))
+				{
+					throw new Exception("Invalid Ammount");
+				}
+
 				using var context = new MovieRentalDbContext();
 
 				var rental = new Rental()
@@ -38,7 +43,9 @@ namespace WpfMovieRental
 					DaysRented = ~int.Parse(txtDaysRentle.Text),
 					CustomerId= int.Parse(txtCustomerId.Text),
 					MovieId= int.Parse(txtMovieId.Text),
-					CustomerName = txtCustomerName.Text
+					CustomerName = txtCustomerName.Text,
+					PaymentMethod = txtPaymentMethod.Text,
+					Ammount = decAmmount
 				};
 
 				await context.Rentals.AddAsync(rental);
@@ -49,6 +56,8 @@ namespace WpfMovieRental
 				txtCustomerId.Clear();
 				txtMovieId.Clear();
 				txtCustomerName.Clear();
+				txtPaymentMethod.Clear();
+				txtAmmount.Text ="0";
 			}
 			catch (Exception ex)
 			{

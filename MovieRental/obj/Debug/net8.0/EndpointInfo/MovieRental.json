@@ -77,6 +77,35 @@
         }
       }
     },
+    "/api/PaymentMethod/SavePaymentMethod": {
+      "post": {
+        "tags": [
+          "PaymentMethod"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PaymentMethodName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Rental": {
       "post": {
         "tags": [
@@ -204,6 +233,10 @@
           "customerName": {
             "type": "string",
             "nullable": true
+          },
+          "ammount": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

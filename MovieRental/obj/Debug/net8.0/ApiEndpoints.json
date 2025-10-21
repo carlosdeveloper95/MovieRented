@@ -16,6 +16,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MovieRental.Controllers.PaymentMethodController",
+    "Method": "SavePaymentMethod",
+    "RelativePath": "api/PaymentMethod/SavePaymentMethod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentMethodName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MovieRental.Controllers.MovieController",
     "Method": "GetAllMovies",
     "RelativePath": "Movie",

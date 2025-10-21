@@ -22,5 +22,7 @@ namespace MovieRental.Rental
 		// TODO: we should have a table for the customers
 		// I don't delete this column because of methods that are using it
 		public string CustomerName { get; set; }
+
+		public decimal Ammount { get; set; }
 	}
 }

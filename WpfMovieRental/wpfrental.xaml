@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMovieRental"
         mc:Ignorable="d"
-        Title="wpfrental" Height="450" Width="800">
+        Title="Rental" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -21,11 +21,17 @@
         <TextBlock Text="Customer Id:" Grid.Row="1" VerticalAlignment="Center"/>
         <TextBox x:Name="txtCustomerId" Grid.Row="1" Margin="100,0,0,5" Width="250"/>
 
-        <TextBlock Text="Movie Id:" Grid.Row="1" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtMovieId" Grid.Row="1" Margin="100,0,0,5" Width="250"/>
+        <TextBlock Text="Movie Id:" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtMovieId" Grid.Row="2" Margin="100,0,0,5" Width="250"/>
 
-        <TextBlock Text="Customer Name:" Grid.Row="1" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtCustomerName" Grid.Row="1" Margin="100,0,0,5" Width="250"/>
+        <TextBlock Text="Customer Name:" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtCustomerName" Grid.Row="3" Margin="100,0,0,5" Width="250"/>
+
+        <TextBlock Text="Payment Method:" Grid.Row="4" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtPaymentMethod" Grid.Row="4" Margin="100,0,0,5" Width="250"/>
+
+        <TextBlock Text="Ammount:" Grid.Row="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtAmmount" Grid.Row="5" Margin="100,0,0,5" Width="250"/>
 
         <Button Content="Save Rentle"
                 Grid.Row="3"

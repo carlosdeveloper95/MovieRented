@@ -12,6 +12,8 @@ namespace MovieRental.Data
 
 		public DbSet<Customers.Customer> Customer { get; set; }
 
+		public DbSet<PaymentMethod.PaymentMethod> PaymentMethod { get; set; }
+
 		private string DbPath { get; }
 
 		/// <summary>

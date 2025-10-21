@@ -64,6 +64,20 @@ namespace WpfMovieRental
 			}
 		}
 
+		private async void btnPaymentMethods_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				WpfPaymentMethod form = new WpfPaymentMethod();
+				form.ShowDialog();
+				form = null;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message, "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+			}
+		}
+
 		private async void btnListMovies_Click(object sender, RoutedEventArgs e)
 		{
 			try
@@ -97,6 +111,20 @@ namespace WpfMovieRental
 			try
 			{
 				wplListRental form = new wplListRental();
+				form.ShowDialog();
+				form = null;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message, "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+			}
+		}
+
+		private async void btnListPaymentMethods_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				wpflistpayment form = new wpflistpayment();
 				form.ShowDialog();
 				form = null;
 			}

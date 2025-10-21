@@ -11,7 +11,13 @@
     <Compile Update="wpfListMovies.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="wpflistpayment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="wpfmovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WpfPaymentMethod.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="wpfrental.xaml.cs">

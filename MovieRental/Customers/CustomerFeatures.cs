@@ -26,9 +26,26 @@ namespace MovieRental.Customers
 		{
 			try
 			{
+				//Id Validation case the customer is being created with a specific Id
+				if (ValidateCustomer(customer.Id) && customer.Id>0)
+					throw new Exception($"The Customer {customer.Id} already exists.");
+
 				_movieRentalDb.Customer.Add(customer);
 				_movieRentalDb.SaveChanges();
 				return customer;
+			}
+			catch (Exception e)
+			{
+				throw e;
+			}
+		}
+
+		public bool ValidateCustomer(int intCustomerId)
+		{
+			try
+			{
+				var customer = _movieRentalDb.Customer.FirstOrDefault(c => c.Id == intCustomerId);
+				return customer != null;
 			}
 			catch (Exception e)
 			{
