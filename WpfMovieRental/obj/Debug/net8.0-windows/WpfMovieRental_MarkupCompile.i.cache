@@ -1,0 +1,20 @@
+﻿WpfMovieRental
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Carlos Araujo-20250922T132848Z-1-001\Carlos Araujo\MovieRented\WpfMovieRental\obj\Debug\net8.0-windows\
+WpfMovieRental
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Carlos Araujo-20250922T132848Z-1-001\Carlos Araujo\MovieRented\WpfMovieRental\App.xaml
+9-1603610071
+
+14-1476185627
+348-2109155701
+MainWindow.xaml;wpfcustomer.xaml;wpfListCustomers.xaml;wpfListMovies.xaml;wpflistpayment.xaml;wpfmovies.xaml;WpfPaymentMethod.xaml;wpfrental.xaml;wplListRental.xaml;
+
+False
+

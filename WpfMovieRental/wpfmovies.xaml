@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfMovieRental.wpfmovies"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMovieRental"
+        mc:Ignorable="d"
+        Title="Movie" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Title:" Grid.Row="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtTitle" Grid.Row="0" Margin="100,0,0,5" Width="250"/>
+
+        <TextBlock Text="Producer:" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtProducer" Grid.Row="1" Margin="100,0,0,5" Width="250"/>
+
+        <Button Content="Save Movie"
+                Grid.Row="3"
+                Margin="0,10,0,0"
+                Width="150"
+                Height="30"
+                HorizontalAlignment="Left"
+                Click="BtnSave_Click"/>
+
+        <TextBlock x:Name="lblStatus"
+                   Grid.Row="4"
+                   Margin="0,20,0,0"
+                   Foreground="Green"
+                   FontWeight="Bold"
+                   TextAlignment="Center"/>
+    </Grid>
+</Window>
